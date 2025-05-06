@@ -1,60 +1,30 @@
-# 📊 RAG Local com PDFs de Investimentos
+# 📊 Invest Guru - RAG System for Investment Study and Analysis
 
-Sistema de perguntas e respostas baseado em Retrieval-Augmented Generation (RAG) para PDFs sobre investimentos.
+A Retrieval-Augmented Generation (RAG) system designed to help investors understand financial content and investment-related documents.
 
-## 🚀 Funcionalidades
+This project allows you to upload PDFs such as investor relations reports (RIs), study materials, and financial presentations. A language model (LLM) then answers your questions based solely on the content from these documents — with no speculation or investment recommendations.
 
-- Responde perguntas sobre investimentos com base em PDFs
-- Upload dinâmico de novos PDFs 
-- Visualização e gerenciamento dos documentos carregados
-- Contexto das respostas com referência aos documentos
+---
 
-## 📋 Requisitos
+## 🎯 Purpose
 
-- Python 3.9+
-- Pacotes listados em `requirements.txt`
-- Chave de API da OpenAI (se usando o modelo remoto)
+This system is built to:
 
-## 🔧 Instalação
+- 📚 Support learning about finance and investing using real, trusted documents
+- 💬 Provide clear and accurate answers like a specialized tutor
+- 🔍 Reference the actual content of PDFs as the source for every answer
+- 🚫 **Never offer investment suggestions or generate made-up responses**
 
-1. Clone o repositório
-2. Instale as dependências:
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 💡 Example Use Cases
 
-3. Configure as variáveis de ambiente:
-- Crie um arquivo `.env` na raiz do projeto
-- Adicione sua chave de API da OpenAI (se necessário):
-  ```
-  OPENAI_API_KEY=sua_chave_aqui
-  ```
+- Ask questions about concepts from an investment course or study guide  
+- Explore information in company reports (RI documents)  
+- Reinforce financial knowledge using high-quality uploaded materials  
 
-## 🏃‍♂️ Executando o sistema
+---
 
-```bash
-streamlit run app/main.py
-```
+## ⚠️ Disclaimer
 
-## 🗂️ Estrutura do projeto
-
-```
-rag_investimentos/
-│
-├── app/                       # Código da aplicação Streamlit
-│   ├── chat.py                # Lógica do chat
-│   ├── upload.py              # Upload de PDFs
-│   ├── utils.py               # Funções auxiliares
-│   └── main.py                # Streamlit App
-│
-├── data/
-│   ├── pdfs/                  # PDFs carregados
-│   └── index/                 # Vectorstore persistido (ex: chroma DB)
-│
-├── ingest/
-│   └── ingest_pdf.py          # Pipeline de ingestão e indexação
-│
-├── requirements.txt
-└── README.md
-``` 
+This is an educational tool only. It does **not** perform financial analysis or provide investment advice.
