@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-openai
+langchain-chroma
+langchain-huggingface
+langchain-community
+chromadb
+PyMuPDF
+python-dotenv
+openai
+sentence_transformers
+huggingface_hub
+pydantic
+
+#pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
